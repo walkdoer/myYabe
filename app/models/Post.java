@@ -31,7 +31,9 @@ public class Post extends Model {
         this.content = content;
         this.postedAt = new Date();
     }
-
+    public String toString() {
+        return title;
+    }
     public Post addComment(String author, String content) {
         Comment newComment = new Comment(this, author, content).save();
         this.comments.add(newComment);

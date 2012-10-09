@@ -10,7 +10,9 @@ public class Comment extends Model {
 
     public String author;
     public Date postedAt;
-
+    public String toString() {
+        return author;
+    }
     @Lob
     public String content;
 

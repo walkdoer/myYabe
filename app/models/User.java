@@ -9,13 +9,19 @@ package models;
 
 import javax.persistence.Entity;
 import java.util.*;
+
+import play.data.validation.*;
 import play.db.jpa.*;
 
 
 @Entity
 
 public class User extends Model{
+    @Email
+    @Required
     public String email;
+
+    @Required
     public String password;
     public String fullname;
     public boolean isAdmin;
@@ -24,5 +30,8 @@ public class User extends Model{
         this.email = email;
         this.password = password;
         this.fullname = fullname;
+    }
+    public String toString() {
+        return email;
     }
 }

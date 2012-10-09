@@ -1,0 +1,14 @@
+
+/*custom*/
+.tags-list .tag {
+     cursor: pointer;
+     padding: 1px 4px;
+     text-align:center;
+     margin-left:3px;
+}
+.crudField .tags-list .selected {
+     text-align:center;
+     background: #222;
+     margin-left:3px;
+     color: #fff;
+}

@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a7176d1-a01e-4ac7-bc37-5e6efe32e7e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Tag.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/Application/listTagged.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.java" afterPath="$PROJECT_DIR$/app/controllers/Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/Comments.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/Posts.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/Tags.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/Users.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/Comments/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/tags.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Comment.java" afterPath="$PROJECT_DIR$/app/models/Comment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Post.java" afterPath="$PROJECT_DIR$/app/models/Post.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/show.html" afterPath="$PROJECT_DIR$/app/views/Application/show.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tags/display.html" afterPath="$PROJECT_DIR$/app/views/tags/display.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/User.java" afterPath="$PROJECT_DIR$/app/models/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/dependencies.yml" afterPath="$PROJECT_DIR$/conf/dependencies.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/messages" afterPath="$PROJECT_DIR$/conf/messages" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myYabe.iws" afterPath="$PROJECT_DIR$/myYabe.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/BasicTest.java" afterPath="$PROJECT_DIR$/test/BasicTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/initial-data.yml" afterPath="$PROJECT_DIR$/test/initial-data.yml" />
     </list>
     <ignored path="myYabe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,88 +72,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+      <file leaf-file-name="routes" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="58" selection-start="2024" selection-end="2024" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="9" column="26" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/messages">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="21" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/Comments/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="18" selection-start="269" selection-end="594" vertical-scroll-proportion="0.63785046">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="show.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/Application/show.html">
+        <entry file="file://$PROJECT_DIR$/app/views/Posts/show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="82" selection-start="250" selection-end="250" vertical-scroll-proportion="-7.0">
+            <state line="20" column="55" selection-start="717" selection-end="717" vertical-scroll-proportion="-8.555555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tag.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Tag.java">
+      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/CRUD/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="33" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="display.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/tags/display.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="65" selection-start="1007" selection-end="1007" vertical-scroll-proportion="-6.1346154">
+            <state line="14" column="39" selection-start="481" selection-end="481" vertical-scroll-proportion="-5.6538463">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <file leaf-file-name="tags.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/tags.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="68" selection-start="585" selection-end="585" vertical-scroll-proportion="10.888889">
+            <state line="13" column="46" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/routes">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="59" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listTagged.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/Application/listTagged.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="22" selection-start="202" selection-end="202" vertical-scroll-proportion="0.4127764">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/BasicTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="157" selection-start="5224" selection-end="5224" vertical-scroll-proportion="-7.12">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="initial-data.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/initial-data.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0">
+            <state line="540" column="128" selection-start="8428" selection-end="8428" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,7 +138,27 @@
       <file leaf-file-name="Post.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Post.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="72" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0">
+            <state line="34" column="21" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listTagged.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/Application/listTagged.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="22" selection-start="202" selection-end="202" vertical-scroll-proportion="-6.2222223">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/BasicTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="150" column="85" selection-start="5114" selection-end="5114" vertical-scroll-proportion="-3.76">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,22 +179,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/data.yml" />
-        <option value="$PROJECT_DIR$/conf/initial-data.yml" />
-        <option value="$PROJECT_DIR$/app/views/Application/index.html" />
-        <option value="$PROJECT_DIR$/conf/application.conf" />
-        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
-        <option value="$PROJECT_DIR$/app/Bootstrap.java" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
-        <option value="$PROJECT_DIR$/app/models/Post.java" />
+        <option value="$PROJECT_DIR$/app/controllers/Posts.java" />
+        <option value="$PROJECT_DIR$/app/controllers/Tags.java" />
+        <option value="$PROJECT_DIR$/app/controllers/Comments.java" />
+        <option value="$PROJECT_DIR$/app/controllers/Users.java" />
         <option value="$PROJECT_DIR$/app/models/Tag.java" />
-        <option value="$PROJECT_DIR$/test/BasicTest.java" />
-        <option value="$PROJECT_DIR$/app/views/Application/show.html" />
-        <option value="$PROJECT_DIR$/test/initial-data.yml" />
-        <option value="$PROJECT_DIR$/app/views/tags/display.html" />
-        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/app/models/Comment.java" />
+        <option value="$PROJECT_DIR$/app/models/User.java" />
         <option value="$PROJECT_DIR$/conf/routes" />
-        <option value="$PROJECT_DIR$/app/views/Application/listTagged.html" />
+        <option value="$PROJECT_DIR$/app/models/Post.java" />
+        <option value="$PROJECT_DIR$/conf/messages" />
+        <option value="$PROJECT_DIR$/app/views/Comments/list.html" />
+        <option value="$PROJECT_DIR$/app/views/Posts/show.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
+        <option value="$PROJECT_DIR$/public/stylesheets/tag.css" />
+        <option value="$PROJECT_DIR$/app/views/CRUD/layout.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/tags.css" />
       </list>
     </option>
   </component>
@@ -365,6 +364,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myYabe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myYabe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -419,29 +432,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myYabe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myYabe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="CRUD" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -763,69 +754,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+    <entry file="file://$PROJECT_DIR$/app/models/Tag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="545" column="3" selection-start="8466" selection-end="8466" vertical-scroll-proportion="0.81280786">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="43" selection-start="265" selection-end="265" vertical-scroll-proportion="0.5671642">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="114" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="42" selection-start="6694" selection-end="6694" vertical-scroll-proportion="0.8630769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="68" selection-start="585" selection-end="585" vertical-scroll-proportion="10.888889">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="72" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0">
+        <state line="18" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/show.html">
+    <entry file="file://$PROJECT_DIR$/app/models/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="82" selection-start="250" selection-end="250" vertical-scroll-proportion="-7.0">
-          <folding />
+        <state line="27" column="11" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Tag.java">
+    <entry file="file://$PROJECT_DIR$/app/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="33" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
+        <state line="20" column="78" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -839,16 +788,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/framework/play-1.2.4/framework/src/play/mvc/ActionInvoker.java">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="0" selection-start="6106" selection-end="6106" vertical-scroll-proportion="0.33254156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/BasicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="157" selection-start="5224" selection-end="5224" vertical-scroll-proportion="-7.12">
+        <state line="63" column="58" selection-start="2024" selection-end="2024" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -862,25 +804,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="58" selection-start="2024" selection-end="2024" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="59" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
+        <state line="9" column="26" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/listTagged.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="202" selection-end="202" vertical-scroll-proportion="0.4127764">
+        <state line="8" column="22" selection-start="202" selection-end="202" vertical-scroll-proportion="-6.2222223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/BasicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="85" selection-start="5114" selection-end="5114" vertical-scroll-proportion="-3.76">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="21" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="540" column="128" selection-start="8428" selection-end="8428" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/tags.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="46" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/messages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="21" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/CRUD/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="39" selection-start="481" selection-end="481" vertical-scroll-proportion="-5.6538463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Posts/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="55" selection-start="717" selection-end="717" vertical-scroll-proportion="-8.555555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Comments/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="18" selection-start="269" selection-end="594" vertical-scroll-proportion="0.63785046">
           <folding />
         </state>
       </provider>
