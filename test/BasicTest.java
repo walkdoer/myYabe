@@ -23,6 +23,7 @@ public class BasicTest extends UnitTest {
 
     @Before
     public void setup() {
+        System.out.println("setup delete database");
         Fixtures.deleteDatabase();
     }
     @Test

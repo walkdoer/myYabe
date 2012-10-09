@@ -18,6 +18,8 @@ public class Bootstrap extends Job {
         // Check if the database is empty
         if(User.count() == 0) {
             System.out.println("initial data");
+            //源程序没有这句话，最好再加载数据前先清空数据，否则会出现加载重复ID的问题
+            Fixtures.deleteDatabase();
             Fixtures.loadModels("initial-data.yml");
         }
     }
