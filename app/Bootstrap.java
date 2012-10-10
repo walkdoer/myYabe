@@ -5,7 +5,6 @@
  * Time: 下午1:40
  * To change this template use File | Settings | File Templates.
  */
-import play.*;
 import play.jobs.*;
 import play.test.*;
 
